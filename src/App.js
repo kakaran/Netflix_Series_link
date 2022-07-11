@@ -1,24 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./Header";
+import detail from "./detail"
+import Card from "./Card"
+import "./Style.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <Header />
+    <div className="AllCardsHolder">
+    <div className="threeCards">
+    <Card 
+    imglink = {detail[0].imglink}
+    title = {detail[0].title}
+    Name = {detail[0].Name}
+    links = {detail[0].links}
+    />
+    <Card 
+    imglink = {detail[1].imglink}
+    title = {detail[1].title}
+    Name = {detail[1].Name}
+    links = {detail[1].links}
+    />
+    <Card 
+    imglink = {detail[2].imglink}
+    title = {detail[2].title}
+    Name = {detail[2].Name}
+    links = {detail[2].links}
+    />
     </div>
+    <div className="threeCards">
+    <Card 
+    imglink = {detail[3].imglink}
+    title = {detail[3].title}
+    Name = {detail[3].Name}
+    links = {detail[3].links}
+    />
+    <Card 
+    imglink = {detail[4].imglink}
+    title = {detail[4].title}
+    Name = {detail[4].Name}
+    links = {detail[4].links}
+    />
+    <Card 
+    imglink = {detail[5].imglink}
+    title = {detail[5].title}
+    Name = {detail[5].Name}
+    links = {detail[5].links}
+    />
+    </div>
+    </div>
+    </>
   );
 }
 

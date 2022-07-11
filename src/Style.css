@@ -1,0 +1,110 @@
+*
+{
+    margin:0%;
+    padding: 0%;
+}
+
+.headerContainer
+{
+    /* border:1px solid black; */
+    background-color: whitesmoke;
+    padding: 24px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    color: gray;
+}
+
+.cardContainer
+{
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+    width: 280px;
+    height: 450px;
+    transition: 0.3s all ease-in-out;
+
+}
+.cardContainer:hover
+{      
+    margin-top:-10px;
+}
+.cardImages
+{
+    width: 281px;
+    height: 280px;  
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+}
+
+.cardTextContainer
+{
+    padding: 25px 19px;
+}
+
+.title
+{
+    font-size: 15px;
+    color: gray;
+    text-transform: uppercase;
+}
+
+.cardName
+{
+    font-size:20px;
+    text-transform: uppercase;
+    margin:15px 0px;
+}
+
+.cardButton
+{
+    font-size:17px;
+    padding: 7px 15px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: gray;
+}
+
+.cardButton:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.AllCardsHolder
+{
+    display: flex;
+    flex-direction: column;
+    margin:30px 130px;
+}
+
+.threeCards
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px 0px;
+}
+
+@media (max-width: 1130px) {
+    .AllCardsHolder
+    {
+        /* margin:10px 65px; */
+        justify-content: center;
+        align-items: center;
+    }
+    .threeCards
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .cardContainer
+    {
+        margin :50px 0px;
+    }
+
+}
